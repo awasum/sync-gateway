@@ -1,0 +1,6 @@
+rootProject.name = 'sync-gateway'
+
+includeBuild 'api'
+includeBuild 'service'
+includeBuild 'component-test'
+
