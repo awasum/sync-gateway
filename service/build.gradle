@@ -30,7 +30,7 @@ dependencies {
             [group: 'org.springframework.cloud', name: 'spring-cloud-starter-config'],
             [group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka'],
             [group: 'org.springframework.boot', name: 'spring-boot-starter-jetty'],
-            [group: 'io.mifos.syncgateway', name: 'api', version: project.version],
+            [group: 'io.mifos.sync-gateway', name: 'api', version: project.version],
             [group: 'io.mifos.anubis', name: 'library', version: versions.frameworkanubis],
             [group: 'com.google.code.gson', name: 'gson'],
             [group: 'io.mifos.core', name: 'lang', version: versions.frameworklang],

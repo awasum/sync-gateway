@@ -1,4 +1,4 @@
-group 'io.mifos.syncgateway'
+group 'io.mifos.sync-gateway'
 version '0.1.0.BUILD-SNAPSHOT'
 
 ext.versions = [
