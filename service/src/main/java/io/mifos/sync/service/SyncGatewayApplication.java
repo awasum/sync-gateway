@@ -15,7 +15,9 @@
  */
 package io.mifos.sync.service;
 
+import io.mifos.sync.service.internal.config.CouchDBConnectionProperties;
 import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 public class SyncGatewayApplication {
 
@@ -24,6 +26,14 @@ public class SyncGatewayApplication {
   }
 
   public static void main(String[] args) {
-    SpringApplication.run(SyncGatewayConfiguration.class, args);
+    ConfigurableApplicationContext context = SpringApplication.run(SyncGatewayConfiguration.class, args);
+
+    CouchDBConnectionProperties cdb  = context.getBean(CouchDBConnectionProperties.class);
+
+    System.out.printf("CouchDB Host: %s%n CouchDB Port: %s%n " +
+            "CouchDB User: %s%n CouchDB Password: %s%n",
+            cdb.getCouchDbHost(), cdb.getCouchDbPort(),
+            cdb.getCouchDbUser(), cdb.getCouchDbPassword());
+
   }
 }

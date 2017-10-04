@@ -39,21 +39,22 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableDiscoveryClient
 @EnableAsync
 @EnableTenantContext
-@EnableCassandra
+//@EnableCassandra
 @EnableMariaDB
-@EnableCommandProcessing
-@EnableAnubis
+//@EnableCommandProcessing
+//@EnableAnubis
 @EnableServiceException
 @ComponentScan({
-    "io.mifos.template.service.rest",
-    "io.mifos.template.service.internal.service",
-    "io.mifos.template.service.internal.repository",
-    "io.mifos.template.service.internal.command.handler"
+    "io.mifos.sync.service.rest",
+    "io.mifos.sync.service.internal.service",
+    "io.mifos.sync.service.internal.repository",
+    "io.mifos.sync.service.internal.config"
 })
 @EnableJpaRepositories({
-    "io.mifos.template.service.internal.repository"
+    "io.mifos.sync.service.internal.repository"
 })
 public class SyncGatewayConfiguration extends WebMvcConfigurerAdapter {
+
 
   public SyncGatewayConfiguration() {
     super();
@@ -68,4 +69,5 @@ public class SyncGatewayConfiguration extends WebMvcConfigurerAdapter {
   public void configurePathMatch(final PathMatchConfigurer configurer) {
     configurer.setUseSuffixPatternMatch(Boolean.FALSE);
   }
+
 }

@@ -16,7 +16,9 @@
 package io.mifos.sync.service;
 
 public interface ServiceConstants {
-  String LOGGER_NAME = "rest-logger";
+  String LOGGER_NAME = "sync-rest-logger";
   String COUCHDB_HOST = "couchdb.host";
   String COUCHDB_PORT = "couchdb.port";
+  String COUCHDB_USER = "couchdb.user";
+  String COUCHDB_PASSWORD = "couchdb.password";
 }
