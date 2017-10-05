@@ -2,15 +2,21 @@ group 'io.mifos.sync-gateway'
 version '0.1.0.BUILD-SNAPSHOT'
 
 ext.versions = [
-        frameworkapi : '0.1.0-BUILD-SNAPSHOT',
-        frameworklang : '0.1.0-BUILD-SNAPSHOT',
-        frameworkasync : '0.1.0-BUILD-SNAPSHOT',
+        frameworkapi       : '0.1.0-BUILD-SNAPSHOT',
+        frameworklang      : '0.1.0-BUILD-SNAPSHOT',
+        frameworkasync     : '0.1.0-BUILD-SNAPSHOT',
         frameworkcassandra : '0.1.0-BUILD-SNAPSHOT',
-        frameworkmariadb : '0.1.0-BUILD-SNAPSHOT',
-        frameworkcommand : '0.1.0-BUILD-SNAPSHOT',
-        frameworktest: '0.1.0-BUILD-SNAPSHOT',
-        frameworkanubis: '0.1.0-BUILD-SNAPSHOT',
-        validator : '5.3.0.Final'
+        frameworkmariadb   : '0.1.0-BUILD-SNAPSHOT',
+        frameworkcommand   : '0.1.0-BUILD-SNAPSHOT',
+        frameworktest      : '0.1.0-BUILD-SNAPSHOT',
+        frameworkanubis    : '0.1.0-BUILD-SNAPSHOT',
+        mifosoffice        : '0.1.0-BUILD-SNAPSHOT',
+        mifoscustomer      : '0.1.0-BUILD-SNAPSHOT',
+        mifosaccounting    : '0.1.0-BUILD-SNAPSHOT',
+        mifosportfolio     : '0.1.0-BUILD-SNAPSHOT',
+        mifosdeposit       : '0.1.0-BUILD-SNAPSHOT',
+        mifosteller        : '0.1.0-BUILD-SNAPSHOT',
+        validator          : '5.3.0.Final'
 ]
 
 apply plugin: 'java'

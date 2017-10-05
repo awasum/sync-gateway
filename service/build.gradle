@@ -30,14 +30,25 @@ dependencies {
             [group: 'org.springframework.cloud', name: 'spring-cloud-starter-config'],
             [group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka'],
             [group: 'org.springframework.boot', name: 'spring-boot-starter-jetty'],
-            [group: 'io.mifos.sync-gateway', name: 'api', version: project.version],
+            //[group: 'io.mifos.sync-gateway', name: 'api', version: project.version],
             [group: 'io.mifos.anubis', name: 'library', version: versions.frameworkanubis],
             [group: 'com.google.code.gson', name: 'gson'],
+
             [group: 'io.mifos.core', name: 'lang', version: versions.frameworklang],
             [group: 'io.mifos.core', name: 'async', version: versions.frameworkasync],
             [group: 'io.mifos.core', name: 'cassandra', version: versions.frameworkcassandra],
             [group: 'io.mifos.core', name: 'mariadb', version: versions.frameworkmariadb],
             [group: 'io.mifos.core', name: 'command', version: versions.frameworkcommand],
+            [group: 'io.mifos.core', name: 'test', version: versions.frameworktest],
+            [group: 'io.mifos.core', name: 'api', version: versions.frameworkapi],
+
+            [group: 'io.mifos.customer', name: 'api', version: versions.mifoscustomer],
+            [group: 'io.mifos.accounting', name: 'api', version: versions.mifosaccounting],
+            [group: 'io.mifos.portfolio', name: 'api', version: versions.mifosportfolio],
+            [group: 'io.mifos.deposit-account-management', name: 'api', version: versions.mifosdeposit],
+            [group: 'io.mifos.teller', name: 'api', version: versions.mifosteller],
+            [group: 'io.mifos.office', name: 'api', version: versions.mifosoffice],
+
             [group: 'org.hibernate', name: 'hibernate-validator', version: versions.validator]
     )
 }

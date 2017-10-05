@@ -1,6 +1,6 @@
 rootProject.name = 'sync-gateway'
 
-includeBuild 'api'
+//includeBuild 'api'
 includeBuild 'service'
-includeBuild 'component-test'
+//includeBuild 'component-test'
 
