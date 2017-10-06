@@ -27,6 +27,9 @@ public class CouchDBConnectionProperties {
     @Value("${couchdb.port}")
     private String couchDbPort;
 
+    @Value("${couchdb.database}")
+    private String couchDbDatabase;
+
     @Value("${couchdb.user}")
     private String couchDbUser;
 
@@ -43,6 +46,10 @@ public class CouchDBConnectionProperties {
 
     public String getCouchDbPort() {
         return couchDbPort;
+    }
+
+    public String getCouchDbDatabase(){
+        return couchDbDatabase;
     }
 
     public String getCouchDbUser() {

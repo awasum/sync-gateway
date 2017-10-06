@@ -16,6 +16,7 @@
 package io.mifos.sync.service;
 
 import io.mifos.sync.service.internal.config.CouchDBConnectionProperties;
+import io.mifos.sync.service.internal.config.CouchDBConnector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
@@ -30,10 +31,12 @@ public class SyncGatewayApplication {
 
     CouchDBConnectionProperties cdb  = context.getBean(CouchDBConnectionProperties.class);
 
-    System.out.printf("CouchDB Host: %s%n CouchDB Port: %s%n " +
-            "CouchDB User: %s%n CouchDB Password: %s%n",
-            cdb.getCouchDbHost(), cdb.getCouchDbPort(),
-            cdb.getCouchDbUser(), cdb.getCouchDbPassword());
+    System.out.println("TESTING DATABASE URL: " + cdb.getCouchDbHost() + ":"+ cdb.getCouchDbPort() +
+            "/" + cdb.getCouchDbDatabase());
+
+    CouchDBConnector connector = context.getBean(CouchDBConnector.class);
+
+    System.out.println(connector.connectToCouchDB());
 
   }
 }
