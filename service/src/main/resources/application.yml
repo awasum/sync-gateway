@@ -67,7 +67,7 @@ flyway:
 
 
 couchdb:
-  host: localhost
+  host: http://localhost
   port: 5984
   database: demo
   user: admin
